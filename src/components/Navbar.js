@@ -57,6 +57,7 @@ export const Navbar = () => {
     setShowShelves(false);
     setShowShelf(false);
     setShowBooksWithReviews(false);
+    setShowBooks(false);
   };
 
   const handleClickReview = () => {
