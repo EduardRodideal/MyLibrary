@@ -19,7 +19,12 @@ export const SearchField = () => {
     setStateBook4,
     setShowHome,
     setShowCircle,
+    setShowBooksShelves,
+    setShowShelf,
+    setShowShelves,
+    setShowBooksWithReviews,
   } = useContext(SearchContext);
+
   //this is the book to be founded
   const [book, setBook] = useState("");
   const booksArray = [];
@@ -161,11 +166,13 @@ export const SearchField = () => {
       })
       .then(() => {
         setSearch(!search);
-        // setBook("");
         setShowBooks(true);
         setShowHome(false);
         setShowCircle(false);
-        console.log("Helllo from setShowCircle");
+        setShowBooksShelves(false);
+        setShowShelf(false);
+        setShowShelves(false);
+        setShowBooksWithReviews(false);
       });
     // .then(() => {
     //   setShowCircle(false);
